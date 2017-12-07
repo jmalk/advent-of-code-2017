@@ -15,6 +15,6 @@ fs.readFile(__dirname + '/../inputs/day-01-input', 'utf8', (err, data) => {
     return Number(element);
   });
 
-  let result = dayOne(numbers);
+  let result = dayOne.partOne(numbers);
   console.log(result);
 });

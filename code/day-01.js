@@ -1,4 +1,4 @@
-module.exports = function (arr) {
+function partOne (arr) {
   var accumulator = 0;
   let lastIndex = arr.length - 1;
 
@@ -12,3 +12,12 @@ module.exports = function (arr) {
 
   return accumulator;
 }
+
+function partTwo (arr) {
+  return 3
+}
+
+module.exports = {
+  partOne: partOne,
+  partTwo: partTwo
+};
