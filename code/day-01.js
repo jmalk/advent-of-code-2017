@@ -14,7 +14,19 @@ function partOne (arr) {
 }
 
 function partTwo (arr) {
-  return 3
+  var accumulator = 0;
+  let lastIndex = arr.length - 1;
+
+  let offset = arr.length / 2;
+
+  arr.forEach((currentValue, index, array) => {
+    let complementaryPosition = (index + offset) % array.length;
+    if (currentValue === array[complementaryPosition]) {
+      accumulator += currentValue;
+    }
+  });
+
+  return accumulator;
 }
 
 module.exports = {
