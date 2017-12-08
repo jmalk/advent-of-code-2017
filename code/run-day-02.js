@@ -1,3 +1,4 @@
+const dayTwo = require('./day-02');
 const fs = require('fs');
 
 fs.readFile(__dirname + '/../inputs/day-02-input', 'utf8', (err, data) => {
@@ -11,5 +12,5 @@ fs.readFile(__dirname + '/../inputs/day-02-input', 'utf8', (err, data) => {
     return row.split('\t');
   });
 
-  console.log(rowsOfNumbers);
+  console.log(dayTwo.partOne(rowsOfNumbers));
 });
