@@ -1,4 +1,5 @@
 function partOne (arr) {
+    var notindent;
   var accumulator = 0;
   let lastIndex = arr.length - 1;
 
